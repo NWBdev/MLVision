@@ -76,10 +76,14 @@
                                     <action selector="flashBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htD-pw-7sS"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HvR-Yr-VHF">
+                                <rect key="frame" x="307" y="573" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eD6-tP-Dbk" firstAttribute="leading" secondItem="PsE-BM-cyy" secondAttribute="leading" id="0fB-ha-e2I"/>
+                            <constraint firstItem="HvR-Yr-VHF" firstAttribute="centerY" secondItem="k1N-9z-iXD" secondAttribute="centerY" id="0uO-zw-6be"/>
                             <constraint firstItem="PsE-BM-cyy" firstAttribute="bottom" secondItem="pYc-av-y9O" secondAttribute="bottom" constant="20" id="9Y1-TA-mxx"/>
                             <constraint firstItem="eD6-tP-Dbk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HJg-sH-Cyk"/>
                             <constraint firstItem="PsE-BM-cyy" firstAttribute="trailing" secondItem="k1N-9z-iXD" secondAttribute="trailing" constant="20" id="Wpu-Eg-5q6"/>
@@ -89,6 +93,7 @@
                             <constraint firstItem="uMV-RN-XuF" firstAttribute="centerX" secondItem="eD6-tP-Dbk" secondAttribute="centerX" id="e9i-8z-EDK"/>
                             <constraint firstItem="PsE-BM-cyy" firstAttribute="bottom" secondItem="k1N-9z-iXD" secondAttribute="bottom" constant="20" id="emT-Ub-V6K"/>
                             <constraint firstItem="eD6-tP-Dbk" firstAttribute="trailing" secondItem="PsE-BM-cyy" secondAttribute="trailing" id="pP8-3N-iMI"/>
+                            <constraint firstItem="HvR-Yr-VHF" firstAttribute="centerX" secondItem="k1N-9z-iXD" secondAttribute="centerX" id="pks-n9-JC2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PsE-BM-cyy"/>
                     </view>
@@ -99,6 +104,7 @@
                         <outlet property="flashButton" destination="pYc-av-y9O" id="lzE-dh-2ES"/>
                         <outlet property="identificationLbl" destination="o0J-Jw-ZpM" id="6K4-Ex-lZC"/>
                         <outlet property="roundedLblView" destination="uMV-RN-XuF" id="N11-0g-mxm"/>
+                        <outlet property="spinner" destination="HvR-Yr-VHF" id="MNx-ls-MJY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
